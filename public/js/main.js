@@ -23,6 +23,10 @@ const { username  } = Qs.parse(location.search,{
     ignoreQueryPrefix: true
 });
 const socket = io();
+socket.on("disconnect", () => {
+    disconnectModal.style.display = "block";
+})
+
 socket.emit("joinRoom", {username});
 socket.on("sameUsername", () => {
     cannotJoinError.style.display = "block";
@@ -1556,7 +1560,3 @@ socket.on("accused", ({accused, real, user}) => {
     }, 1000);
 })
 };
-socket.on("disconnect", () => {
-    disconnectModal.style.display = "block";
-})
-
