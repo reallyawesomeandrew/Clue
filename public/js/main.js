@@ -986,7 +986,7 @@ showDiceButton.addEventListener("click", () => {
     setTimeout(() => {
         // diceSound.play();
         let num1 = Math.floor(Math.random() * 6 + 1);
-        let num2 = 1//Math.floor(Math.random() * 6 + 1);
+        let num2 = Math.floor(Math.random() * 6 + 1);
         const dice = [...document.querySelectorAll(".die-list")];
         dice[0].classList.toggle("odd-roll");
         dice[0].classList.toggle("even-roll");
