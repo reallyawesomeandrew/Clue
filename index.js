@@ -21,7 +21,7 @@ var chosenPerson;
 var chosenWeapon;
 var chosenRoom;
 var clueShow = false;
-var clues = ["BothDrawClue"]//,"OneFaceUpClue","AllRushClue", "SecretPassageClue","ShowLeftClue", "RevealSuspectClue", "AllRevealClue", "RevealLocationClue", "RevealWeaponClue"];
+var clues = ["BothDrawClue", "OneFaceUpClue","AllRushClue", "SecretPassageClue","ShowLeftClue", "RevealSuspectClue", "AllRevealClue", "RevealLocationClue", "RevealWeaponClue"];
 var mixedClues = [];
 var pickOneUser = false;
 var usersShown = 0;
